@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+group = 'org.springframework.boot'
+version = '1.5.2.RELEASE'
+
+description = """Spring Boot AOP Sample"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+configurations.all {
+	it.exclude group: 'commons-logging'
+}
+
+repositories {
+	maven { url "http://elpdtmvn/repository/internal/" }
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: version
+    testCompile(group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: version) {
+		exclude(module: 'commons-logging')
+    }
+}
+
+mainClassName = 'sample.aop.SampleAopApplication'
