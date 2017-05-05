@@ -1,4 +1,4 @@
-package sample.aop.monitor;
+package neo.springboot.aop.monitor;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-import sample.aop.service.HelloAnchorService;
+import neo.springboot.aop.service.HelloAnchorService;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

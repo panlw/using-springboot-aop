@@ -1,4 +1,4 @@
-package sample.aop.monitor;
+package neo.springboot.aop.monitor;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;

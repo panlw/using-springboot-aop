@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package sample.aop;
+package neo.springboot.aop;
 
-import sample.aop.service.HelloWorldService;
+import neo.springboot.aop.service.HelloWorldService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

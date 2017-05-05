@@ -1,0 +1,108 @@
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+compileJava {
+    options.compilerArgs << '-Xlint:unchecked'
+}
+
+repositories {
+    maven { url 'http://elpdtmvn/repository/internal' }
+    // jcenter()
+}
+
+dependencies {
+
+    /*----------------+
+    |   JDBC Driver   |
+    +================*/
+
+    //runtime group: 'mysql', name: 'mysql-connector-java'
+    //compile fileTree(dir: 'lib/jdbc', include: '*.jar')
+
+    /*---------------------------+
+    |   LANG/STDLIB EXTENSIONS   |
+    +===========================*/
+
+    // Spring Boot Starter
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter'
+    compile group: 'org.projectlombok', name: 'lombok'
+
+    // Google Core Libraries for Java
+    //compile group: 'com.google.guava', name: 'guava', version: '21.0'
+
+    // Library of utilities to assist with developing IO functionality
+    //compile group: 'commons-io', name: 'commons-io', version: '2.5'
+
+    // Security (Captcha & JWT)
+    //compile group: 'com.github.axet', name: 'kaptcha', version: '0.0.9'
+    //compile group: 'com.auth0', name: 'java-jwt', version: '3.1.0'
+
+    // PDF Library
+    //compile group: 'com.itextpdf', name: 'kernel', version: '7.0.2'
+    // PDF Crypto
+    //runtime group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.56'
+
+    // AOP (by Spring-AOP and AspectJ)
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop'
+
+    /*-----------------------------+
+    |   SPRING + SHIRO + MYBATIS   |
+    +=============================*/
+
+    // MVC (without View)
+    //compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    //compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jdk8', version: '2.8.8'
+    //compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.8.8'
+
+    // Security (by Shiro)
+    //compile group: 'org.apache.shiro', name: 'shiro-web', version: '1.3.2'
+    //compile group: 'org.apache.shiro', name: 'shiro-spring', version: '1.3.2'
+
+    // ORM (by myBatis)
+    //compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.0'
+    //compile group: 'org.mybatis', name: 'mybatis-typehandlers-jsr310', version: '1.0.2'
+
+    // DB Connection Pool
+    //compile group: 'org.apache.tomcat', name: 'tomcat-jdbc', version: '8.0.43'
+
+    /*--------------------+
+    |   SESSION & CACHE   |
+    +====================*/
+
+    // Session over Redis
+    //compile group: 'org.springframework.session', name: 'spring-session'
+    //compile group: 'org.springframework.session', name: 'spring-session-data-redis'
+
+    // Cache over Redis
+    //compile group: 'org.springframework.boot', name: 'spring-boot-starter-cache'
+    //compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis'
+
+    /*--------------+
+    |   MESSAGING   |
+    +==============*/
+
+    // Mongo DB/ORM
+    //compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb'
+    //compile group: 'org.mongodb.morphia', name: 'morphia', version: '1.3.2'
+
+    // WebSocket
+    //compile group: 'org.springframework.boot', name: 'spring-boot-starter-websocket'
+
+    // Mail
+    //compile group: 'org.springframework.boot', name: 'spring-boot-starter-mail'
+
+    /*-------------+
+    |   WORKFLOW   |
+    +=============*/
+
+    //compile group: 'org.activiti', name: 'activiti-spring-boot-starter-basic', version: '5.22.0'
+
+    /*---------------+
+    |   OPS. TOOLS   |
+    +===============*/
+
+    // DevOps by Actuator
+    //runtime group: 'org.springframework.boot', name: 'spring-boot-starter-actuator'
+    //runtime group: 'eu.hinsch', name: 'spring-boot-actuator-logview', version: '0.2.12'
+
+}

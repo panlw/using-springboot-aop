@@ -1,4 +1,4 @@
-package sample.aop.monitor;
+package neo.springboot.aop.monitor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

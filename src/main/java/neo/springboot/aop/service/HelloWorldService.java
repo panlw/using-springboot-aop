@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package sample.aop.service;
+package neo.springboot.aop.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

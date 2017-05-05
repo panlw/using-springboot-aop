@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package sample.aop;
+package neo.springboot.aop;
 
 import org.junit.After;
 import org.junit.Before;
